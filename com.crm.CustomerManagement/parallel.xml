@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite"  thread-count="2" parallel="tests">
+  <test  name="Test1">
+  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="OrganizationTest.Createorg"/>
+    </classes>
+  </test> <!-- Test -->
+  <test  name="Test2">
+  <parameter name="browser" value="firefox"></parameter>
+    <classes>  
+      <class name="OrganizationTest.CreateOrganization"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

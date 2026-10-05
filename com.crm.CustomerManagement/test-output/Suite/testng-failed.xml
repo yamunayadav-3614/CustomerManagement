@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]">
+  <test thread-count="2" parallel="tests" name="Test2(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="OrganizationTest.CreateOrganization">
+        <methods>
+          <include name="deleteOrg"/>
+          <include name="dataBaseConnection"/>
+          <include name="launchBrowser"/>
+          <include name="createOrg3"/>
+          <include name="createOrg2"/>
+          <include name="createOrg1"/>
+          <include name="disconnectWithDatabase"/>
+          <include name="loginTocmt"/>
+          <include name="closeBrowser"/>
+          <include name="logoutFromcmt"/>
+        </methods>
+      </class> <!-- OrganizationTest.CreateOrganization -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+  <test thread-count="2" parallel="tests" name="Test1(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="OrganizationTest.Createorg">
+        <methods>
+          <include name="dataBaseConnection"/>
+          <include name="launchBrowser"/>
+          <include name="disconnectWithDatabase"/>
+          <include name="loginTocmt"/>
+          <include name="closeBrowser"/>
+          <include name="logoutFromcmt"/>
+          <include name="createOrg"/>
+        </methods>
+      </class> <!-- OrganizationTest.Createorg -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
